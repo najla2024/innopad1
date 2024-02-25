@@ -1,26 +1,39 @@
 <template>
-    <div>
-        <h1>login</h1>
-    <div class="register">
+    <div class="contrainer">
+        
+        <div class="register">
+        <h1>login </h1>
+        <br> 
     <input type="text" v-model=" email" placeholder="Enter Email"/>
     <input type="password" v-model="password" placeholder="Enter Password"/>
-    <button v-on:click="login" > login</button>
-    <p> 
-        <router-link to="/sign-up">sign up</router-link>
-    </p>
+    <button class="bg-cyan-500 hover:bg-cyan-600" v-on:click="login" > login</button>
+   
     </div>
-    </div>
+</div>
 </template>
 
 <script>
 export default {
     name:'login',
+    data ()
+    {
+        return{
+            email :'',
+            password:''
+        }
+    },
+    methods:{
+        login()
+        {
+    console.log('stop form')
+        }
+    }
     
 };
 </script>
 
 
-<style>
+ <style>
 .register input{
     widows: 300px;
     height: 40px;
