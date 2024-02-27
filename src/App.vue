@@ -4,6 +4,12 @@
  
   <navbar/>
 </header>
+<router-link
+            to="/link"
+            class="block ml-4 mt-4
+            lg:inline-block lg:mt-0 text-blue-200
+            hover:text-white"
+            >Login</router-link>
  <!--<div id="nav">
     <router-link to ="/"> <i class="bi bi-code"></i>home</router-link>|
     <router-link to ="/"> home</router-link>|
